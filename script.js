@@ -39,14 +39,14 @@ $(document).ready(function () {
 
   // Typing animation script start
   var typed = new Typed(".typing", {
-    strings: ["React.js Developer", "Front End Developer", "Youtuber", "Teacher"],
+    strings: ["Data Scientist", "Data Analyst","Machine Learning Engineer", "Software Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing2", {
-    strings: ["React.js Developer", "Front End Developer", "Youtuber", "Teacher"],
+    strings:["Data Scientist", "Data Analyst","Machine Learning Engineer", "Software Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -82,3 +82,26 @@ $(document).ready(function () {
   });
   // owl carousel script end
 });
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+
+
+
+
+
+

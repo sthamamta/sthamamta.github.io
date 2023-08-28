@@ -7,6 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  --site-color-01: #7e0b4c;
+  --site-color-01-hover: #9e2f6e;
 }
 
 html {
@@ -23,7 +25,7 @@ html {
 }
 .navbar.sticky {
   padding: 2px 0;
-  background-color: crimson;
+  background-color: var(--site-color-01);
 }
 .max-width {
   max-width: 1300px;
@@ -44,7 +46,8 @@ html {
 }
 
 .navbar .logo a span {
-  color: crimson;
+  /* color: crimson; */
+  color: var(--site-color-01);
 }
 .navbar.sticky .logo a span {
   color: white;
@@ -66,7 +69,7 @@ html {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+  color: var(--site-color-01);
 }
 .navbar.sticky .menu li a:hover {
   color: #000;
@@ -85,7 +88,7 @@ html {
   position: fixed;
   height: 50px;
   width: 47px;
-  background: crimson;
+  background: var(--site-color-01);
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -142,17 +145,17 @@ html {
 }
 .home .home-content .text-3 span {
   font-weight: 500;
-  color: crimson;
+  color: var(--site-color-01);
 }
 .home .home-content a {
   display: inline-block;
-  background: crimson;
+  background: var(--site-color-01);
   color: #fff;
   font-size: 25px;
   padding: 8px 20px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--site-color-01);
   transition: all 0.3s ease;
 }
 .home .home-content .web {
@@ -183,6 +186,8 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
+
 section .title {
   position: relative;
   text-align: center;
@@ -208,7 +213,7 @@ section .title::after {
   left: 50%;
   padding: 5px;
   font-size: 20px;
-  color: crimson;
+  color: var(--site-color-01);
   background: #fff;
   transform: translateX(-50%);
 }
@@ -218,9 +223,26 @@ section .title::after {
   background: #111;
   color: #fff;
 }
+
 .skills .title::before,
 .contact .title::before {
   background: #fff;
+}
+
+
+.skills-container{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+.skills-item{
+  text-align: center;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
 }
 
 /* about section styling */
@@ -246,7 +268,7 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: crimson;
+  color: var(--site-color-01);
 }
 .about .about-content .right p {
   text-align: justify;
@@ -255,18 +277,18 @@ section .title::after {
 }
 .about .about-content .right a {
   display: inline-block;
-  background: crimson;
+  background: var(--site-color-01);
   color: #fff;
   font-size: 25px;
   font-weight: 500;
   padding: 3px 25px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--site-color-01);
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: crimson;
+  color: var(--site-color-01);
   background: none;
 }
 
@@ -294,7 +316,7 @@ section .title::after {
 .button1 .icon i {
   font-size: 18px;
   line-height: 45px;
-  color: crimson;
+  color: var(--site-color-01);
   transition: all 0.3s ease-in-out;
 }
 .button1:hover {
@@ -311,7 +333,7 @@ section .title::after {
 }
 
 .button1:nth-child(1):hover .icon {
-  background: #e1306c;
+  background: var(--site-color-01-hover);
 }
 
 .button1:nth-child(2):hover .icon {
@@ -337,7 +359,8 @@ section .title::after {
   background: #1da1f2;
 }
 .button1:nth-child(1) span a {
-  color: #e1306c;
+  /* color: #e1306c; */
+  color: var(--site-color-01-hover);
 }
 
 .button1:nth-child(2) span a {
@@ -368,33 +391,37 @@ section .title::after {
   background: #111;
   content: "what i know";
 }
+
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
+
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 10px;
 }
+
 .skills .skills-content .left p {
   text-align: justify;
   line-height: 1.6;
   letter-spacing: 1px;
 }
+
 .skills .skills-content .left a {
-  display: inline-block;
-  background: crimson;
+  /* display: inline-block; */
+  background: var(--site-color-01);
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid var(--site-color-01);
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  color: crimson;
+  color: var(--site-color-01);
   background: none;
 }
 .skills .skills-content .right .info {
@@ -442,7 +469,7 @@ section .title::after {
   width: 280px;
   object-fit: fill;
   border-radius: 10px;
-  border: 2px solid crimson;
+  border: 2px solid var(--site-color-01);
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img {
@@ -458,16 +485,17 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid crimson !important;
+  border: 2px solid var(--site-color-01) !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
-  background: crimson !important;
+  background: var(--site-color-01) !important;
 }
 
 /* contact section styling */
@@ -505,7 +533,7 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: crimson;
+  color: var(--site-color-01);
 }
 .contact .contact-content .row .email-icon {
   margin-left: -7px;
@@ -565,8 +593,8 @@ section .title::after {
 .contact .right form .button button {
   height: 100%;
   width: 100%;
-  border: 2px solid crimson;
-  background: crimson;
+  border: 2px solid var(--site-color-01);
+  background: var(--site-color-01);
   color: #fff;
   font-size: 22px;
   font-weight: 500;
@@ -587,7 +615,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color: crimson;
+  color: var(--site-color-01);
   text-decoration: none;
 }
 footer span a:hover {
@@ -636,9 +664,9 @@ footer span a:hover {
     padding-top: 40px;
     transition: all 0.3s ease;
   }
-  .navbar .menu.active {
+  /* .navbar .menu.active {
     left: 0;
-  }
+  } */
   .navbar .menu li {
     display: block;
   }
@@ -728,4 +756,81 @@ footer span a:hover {
     height: 250px;
     width: 250px;
   }
+}
+
+
+/* // added for projects section */
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible {
+  background-color: var(--site-color-01);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 77%;
+  margin-left: 13%;
+  margin-bottom: 0.5%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  overflow-wrap: break-word !important;
+  
+}
+
+.colcontent {
+  padding: 0 18px;
+  width: 77%;
+  display:none;
+  margin-left: 13%;
+  text-align: left;
+  background-color: #f1f1f1;
+  overflow-wrap: break-word;
+  
+}
+
+
+.collapsible:hover {
+  color: white;
+  background: #000;
+  border: 2px solid var(--site-color-01);
+  transition: all 0.3s ease-in-out;
+}
+
+.collapsible{
+  cursor: pointer;
+}
+
+.collapsible.active .colcontent {
+  display: block;
+}
+
+.show-content{
+  display: block;
+}
+
+
+
+/* for skills section */
+
+.item-service{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.item-service span{
+  font-family: sans-serif;
+  font-size: 22px;
+  color:var(--site-color-01);
+}
+
+.skills-content{
+  display: inline;
+  /* justify-content:center; */
+
 }
