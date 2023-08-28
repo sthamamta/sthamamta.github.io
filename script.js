@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   // toggle menu/navbar script start
   $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
+    // $(".navbar .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
   // toggle menu/navbar script end

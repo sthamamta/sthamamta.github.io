@@ -337,26 +337,26 @@ section .title::after {
 }
 
 .button1:nth-child(2):hover .icon {
-  background: #4267b2;
+  background: var(--site-color-01-hover);
 }
 
 .button1:nth-child(3):hover .icon {
-  background: #1da1f2;
+  background: var(--site-color-01-hover);
 }
 
 .button1:nth-child(4):hover .icon {
-  background: #1da1f2;
+  background: var(--site-color-01-hover);
 }
 
 .button1:nth-child(5):hover .icon {
-  background: #1da1f2;
+  background: var(--site-color-01-hover);
 }
 
 .button1:nth-child(6):hover .icon {
   background: #333;
 }
 .button1:nth-child(7):hover .icon {
-  background: #1da1f2;
+  background: var(--site-color-01-hover);
 }
 .button1:nth-child(1) span a {
   /* color: #e1306c; */
@@ -364,26 +364,26 @@ section .title::after {
 }
 
 .button1:nth-child(2) span a {
-  color: #4267b2;
+  color: var(--site-color-01-hover);
 }
 
 .button1:nth-child(3) span a {
-  color: #1da1f2;
+  color: var(--site-color-01-hover);
 }
 
 .button1:nth-child(4) span a {
-  color: #1da1f2;
+  color: var(--site-color-01-hover);
 }
 
 .button1:nth-child(5) span a {
-  color: #1da1f2;
+  color: var(--site-color-01-hover);
 }
 
 .button1:nth-child(6) span a {
   color: #333;
 }
 .button1:nth-child(7) span a {
-  color: #1da1f2;
+  color: var(--site-color-01-hover);
 }
 
 /* skills section styling */
